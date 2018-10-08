@@ -3,16 +3,16 @@ import styled from 'styled-components'
 import { palette } from 'styled-theme'
 
 import { Text } from './../../atoms/Text'
+import { Block } from './../../atoms/Block'
 import { IconText } from './../../molecules/IconText'
 
-const InnerWrapper = styled.div`
-  display: grid;
-  width: 300px;
-  height: 84.8vh;
+const InnerWrapper = styled(Block)`
   background: ${palette(1)};
-  grid-template: .3fr .4fr / auto;
-  gap: 20px;
+  grid-template: 250px 300px / auto;
   padding: 30px;
+  position: fixed;
+  min-height: 100%;
+  width: 200px;
   
   & .Pages {
     display: grid;
@@ -36,17 +36,17 @@ export const Drawer = (props) => {
   return (
     <InnerWrapper {...props}>
       <div className="Pages">
-        <Text bold className="Subtitle">Pages</Text>
-        <IconText icon="collage" size="smallx2">Dashboard</IconText>
-        <IconText icon="router-wireless" size="smallx2">Devices</IconText>
-        <IconText icon="chart-areaspline" size="smallx2">Analytics</IconText>
+        <Text bold className="Subtitle" size="smallx2">DiwaIoT Platform</Text>
+        <IconText icon="collage">Dashboard</IconText>
+        <IconText icon="router-wireless">Devices</IconText>
+        <IconText icon="chart-areaspline">Analytics</IconText>
       </div>
       <div className="Solutions">
-        <Text bold className="Subtitle">Solutions</Text>
-        <IconText icon="power-plug" size="smallx2">ON/OFF</IconText>
-        <IconText icon="puzzle" size="smallx2">MIL</IconText>
-        <IconText icon="target" size="smallx2">GeoTracker</IconText>
-        <IconText icon="fridge" size="smallx2">Smart Freezer</IconText>
+        <Text bold className="Subtitle" size="smallx2">Solutions</Text>
+        <IconText icon="power-plug">ON/OFF</IconText>
+        <IconText icon="puzzle">MIL</IconText>
+        <IconText icon="target">GeoTracker</IconText>
+        <IconText icon="fridge">Smart Freezer</IconText>
       </div>
     </InnerWrapper>
   )

@@ -8,10 +8,11 @@ const Wrapper = styled.span`
   font-size: ${switchProp(prop("size"), {
     small: prop("theme.sizes.icon.small"),
     smallx2: prop("theme.sizes.icon.smallx2"),
+    smallx3: prop("theme.sizes.icon.smallx3"),
     medium: prop("theme.sizes.icon.medium"),
     large: prop("theme.sizes.icon.large")
   })};
-  cursor: ${ifProp({ pointer: true }, "pointer")};
+  cursor: ${ifProp({ pointer: true }, "pointer", "default")};
   width: 1em;
   height: 1em;
   margin: 0.1em;

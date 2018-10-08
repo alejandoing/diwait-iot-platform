@@ -4,7 +4,7 @@ import { reversePalette } from 'styled-theme/composer'
 const theme = {}
 
 theme.palette = {
-  primary: coolorsToHex('https://coolors.co/011627-1A535C-B9BFC4-e71d36-ff9f1c'),
+  primary: coolorsToHex('https://coolors.co/013440-1A535C-676C73-e71d36-ff9f1c'),
   secondary: coolorsToHex('https://coolors.co/c2185b-e91e63-f06292-f48caf-f8bbd0'),
   danger: coolorsToHex('https://coolors.co/d32f2f-f44336-f8877f-f9a7a1-ffcdd2'),
   alert: coolorsToHex('https://coolors.co/ffa000-ffc107-ffd761-ffecb3-fff2ce'),
@@ -21,15 +21,17 @@ theme.fonts = {
 }
 
 theme.sizes = {
-  small: '1rem',
-  smallx2: '1.2rem',
-  medium: '1.6rem',
-  large: '8rem',
+  small: '1em',
+  smallx2: '1.2em',
+  smallx3: '1.4em',
+  medium: '1.6em',
+  large: '2em',
   icon: {
-    small: '2rem',
-    smallx2: '2.2rem',
-    medium: '2rem',
-    large: '8.4rem',
+    small: '1.4em',
+    smallx2: '1.6em',
+    smallx3: '2em',
+    medium: '2.2em',
+    large: '8.4em',
   }
 }
 

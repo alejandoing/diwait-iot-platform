@@ -2,24 +2,19 @@ import React from 'react'
 import styled from 'styled-components'
 import { palette } from 'styled-theme'
 
+import { Block } from '../../atoms/Block'
 import { IconText } from './../../molecules/IconText'
 
-const InnerWrapper = styled.div`
-  display: grid;
+const Wrapper = styled(Block)`
   background: ${palette(2)};
-  grid-template: auto / auto;
-  gap: 20px;
-  padding: 10px;
-  & svg {
-    cursor: pointer;
-  }
+  padding: 10px 20px;
 `
 
 export const SubHeader = (props) => {
   return (
-    <InnerWrapper {...props}>
-      <IconText size="medium" icon="collage">Dashboard</IconText>
-    </InnerWrapper>
+    <Wrapper {...props}>
+      <IconText size="smallx2" icon="collage" pointer={false}>Dashboard</IconText>
+    </Wrapper>
   )
 }
 
