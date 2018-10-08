@@ -4,12 +4,12 @@ import { reversePalette } from 'styled-theme/composer'
 const theme = {}
 
 theme.palette = {
-  primary: coolorsToHex('https://coolors.co/013440-1A535C-676C73-e71d36-ff9f1c'),
-  secondary: coolorsToHex('https://coolors.co/c2185b-e91e63-f06292-f48caf-f8bbd0'),
-  danger: coolorsToHex('https://coolors.co/d32f2f-f44336-f8877f-f9a7a1-ffcdd2'),
-  alert: coolorsToHex('https://coolors.co/ffa000-ffc107-ffd761-ffecb3-fff2ce'),
-  success: coolorsToHex('https://coolors.co/388e3c-4caf50-7cc47f-9fd4a1-c8e6c9'),
-  grayscale: ['#212121', '#616161', '#9e9e9e', '#bdbdbd', '#e0e0e0', '#ffffff']
+  primary: coolorsToHex('https://coolors.co/013440-1a535c-2e626a-417077-527d83'),
+  secondary: coolorsToHex('https://coolors.co/011627-182b3a-2d3e4b-404f5b-53616b'),
+  danger: coolorsToHex('https://coolors.co/f44336-f55448-f56358-f57167-f67f76'),
+  alert: coolorsToHex('https://coolors.co/ff9f1c-ffa730-ffb045-ffb959-ffc16e'),
+  success: coolorsToHex('https://coolors.co/388e3c-4a984d-7cc47f-9fd4a1-c8e6c9'),
+  grayscale: coolorsToHex('https://coolors.co/3f3f3f-dad6d6-c6c5b9-f4f4eb-9b9b93')
 }
 
 theme.reversePalette = reversePalette(theme.palette)
@@ -31,7 +31,7 @@ theme.sizes = {
     smallx2: '1.6em',
     smallx3: '2em',
     medium: '2.2em',
-    large: '8.4em',
+    large: '5em',
   }
 }
 
