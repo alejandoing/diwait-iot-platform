@@ -19,7 +19,7 @@ const Wrapper = styled(Block)`
 `
 
 export const IconText = ({
-  height, icon, right, children, pointer, ...props
+  height, icon, right, children, pointer, onClick, ...props
 }) => {
   const iconElement = (
     <StyledIcon
@@ -29,6 +29,7 @@ export const IconText = ({
       color={props.color}
       size={props.size}
       pointer={pointer}
+      onClick={onClick}
       palette={props.palette}
       reverse={props.reverse}
       {...props}
@@ -44,7 +45,6 @@ export const IconText = ({
 }
 
 IconText.propTypes = {
-  icon: PropTypes.string.isRequired,
   height: PropTypes.number,
   palette: PropTypes.string,
   reverse: PropTypes.bool,

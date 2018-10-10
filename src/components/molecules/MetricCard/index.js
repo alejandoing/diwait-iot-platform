@@ -1,14 +1,13 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { palette, prop, switchProp, ifProp } from 'styled-theme'
+import { palette } from 'styled-theme'
 
 import { IconText } from '../../molecules/IconText'
 import { Text } from '../../atoms/Text'
 import { Block } from '../../atoms/Block'
 
 const Wrapper = styled(Block)`
-  background: ${palette(1)};
+  background: ${palette(0)};
   justify-items: center;
 `
 

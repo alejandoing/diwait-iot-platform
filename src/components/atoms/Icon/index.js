@@ -33,7 +33,7 @@ export const Icon = ({ icon, ...props }) => {
 }
 
 Icon.propTypes = {
-  icon: PropTypes.string.isRequired,
+  //icon: PropTypes.string.isRequired,
   palette: PropTypes.string,
   reverse: PropTypes.bool,
   size: PropTypes.string,
@@ -41,6 +41,7 @@ Icon.propTypes = {
 }
 
 Icon.defaultProps = {
+  icon: 'bell',
   size: 'small',
   pointer: true
 }
